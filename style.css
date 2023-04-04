@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.container {
+  height: 80vh;
+  width: 23vw;
+  border: 2px solid #ffad60;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ffad60;
+  box-shadow: 5px 7px rgb(165, 123, 59);
+}
+
+button {
+  width: 4.2rem;
+  height: 4.2rem;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fcca5e;
+  border: 1px solid #c38432;
+  font-size: 15px;
+}
+
+button:active {
+  width: 4.2rem;
+  height: 4.2rem;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: orange;
+  background-color: orange;
+  box-shadow: 5px 7px rgb(221, 138, 54);
+}
+.display {
+  border: 2px solid #ffeead;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 20rem;
+  height: 5rem;
+  margin-top: 7px;
+  background-color: #ffeead;
+  border: 1px solid #ba9a71;
+}
+.currentnumber {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 30px;
+  color: #291c12;
+  margin-right: 3px;
+}
+.lastnumber {
+    display: flex;
+    align-self: flex-start;
+}
