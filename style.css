@@ -75,3 +75,8 @@ button:active {
     display: flex;
     align-self: flex-start;
 }
+
+@media (max-width: 1000px) { 
+
+
+} 

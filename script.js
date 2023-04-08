@@ -11,12 +11,16 @@ class Calculator {
   }
 
   addNumber(number) {
+      
     if ( number === "," && (this.currentNumberFunc.includes(",") || this.currentNumberFunc.length === 0)) {
     } 
-    else {
-      this.currentNumberFunc =
-        this.currentNumberFunc.toString() + number.toString();
-    }
+      // if (this.currentNumberFunc === "0") {
+      //   this.currentNumberFunc = number.toString();
+      // 
+       else {
+        this.currentNumberFunc =
+          this.currentNumberFunc.toString() + number.toString();
+      }
   }
 
   chooseOperation(operation) {
@@ -86,13 +90,21 @@ clearButton.addEventListener("click", () => {
 
 operationsButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    calculator.chooseOperation(button.textContent);
+    calculator.chooseOperation(button.id);
     calculator.updateDisplay();
   });
 });
+
+
 
 equalsButton.addEventListener('click', () => {
     calculator.calculate()
     calculator.updateDisplay()
 })
+// wenn 0 als erstes genommen wird und danach neuer zahl soll 0= neuer zahl
 
+//rundet automatisch auf? aber bei geteilt funktioniert es
+
+//wenn was ausgerechtnet wurde und eine neue zahl eingetippt wird soll es von 0 anfangen.
+
+// geteilt von 0 soll error und nicht infinety werden
